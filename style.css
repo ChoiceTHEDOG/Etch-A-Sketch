@@ -1,0 +1,15 @@
+
+#gridContainerDiv{
+    height: 310px;
+    width: 310px;
+
+    display: grid;
+
+    background-color: yellow;
+    border: 2px solid  black;
+}
+
+.cell{
+    border: 1px solid red;
+    box-sizing: border-box;
+}
