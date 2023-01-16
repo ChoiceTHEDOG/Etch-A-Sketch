@@ -1,15 +1,19 @@
 
 #gridContainerDiv{
-    height: 310px;
-    width: 310px;
+    height: 600px;
+    width: 600px;
 
     display: grid;
 
-    background-color: yellow;
-    border: 2px solid  black;
+    background-color: whitesmoke;
+    border: 2px solid  lightblue;
 }
 
 .cell{
-    border: 1px solid red;
+    border: 1px solid black;
     box-sizing: border-box;
+}
+
+.hoverOn{
+    background-color: black;
 }
