@@ -1,5 +1,9 @@
+/* #mainContainer{ */
+    /* display: flex; */
+/* } */
 
 #gridContainerDiv{
+
     height: 600px;
     width: 600px;
 

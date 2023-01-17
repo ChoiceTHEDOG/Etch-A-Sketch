@@ -1,14 +1,27 @@
 const mainContainer = document.querySelector("div");
-mainContainer.textContent = " ";
 
 // creation of the grid container
 const gridDivContainer = document.createElement("div");
 gridDivContainer.setAttribute("id", "gridContainerDiv");
 mainContainer.appendChild(gridDivContainer)
 
-function getGridSize(){
-    prompt("Enter a number between 1-100 to set the grid size")
-}
+// size button creation
+const sizeButton = document.createElement("button");
+sizeButton.setAttribute("id", "sizeButton");
+sizeButton.textContent = "set size"
+mainContainer.insertBefore(sizeButton, gridDivContainer);
+
+let userInputSize;
+
+sizeButton.addEventListener("click", () => {
+    userInputSize = prompt("Enter a number between 1-100 to set the grid size by side");
+    if(userInputSize >= 1 && userInputSize <= 100){
+        createGridItem(userInputSize)
+    } else {
+        alert("Invalid value, please enter a number between 1-100");
+    }
+});
+
 
 function createGridItem(size){
     gridDivContainer.style.gridTemplateColumns = `repeat(${size}, 1fr)`;
@@ -23,7 +36,3 @@ function createGridItem(size){
 }
 
 createGridItem(16);
-
-// function hoverOn(){
-//     item.classList.add("hoverOn");
-// }
