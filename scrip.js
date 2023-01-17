@@ -13,6 +13,7 @@ mainContainer.insertBefore(sizeButton, gridDivContainer);
 
 let userInputSize;
 
+
 sizeButton.addEventListener("click", () => {
     userInputSize = prompt("Enter a number between 1-100 to set the grid size by side");
     if(userInputSize >= 1 && userInputSize <= 100){
@@ -34,5 +35,3 @@ function createGridItem(size){
         gridDivContainer.appendChild(item);
     }
 }
-
-createGridItem(16);
