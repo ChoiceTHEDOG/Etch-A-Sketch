@@ -14,8 +14,8 @@
 }
 
 .cell{
-    border: 1px solid black;
-    box-sizing: border-box;
+    border: 0.5px solid rgb(200, 200, 200);
+    background-color: white;
 }
 
 .hoverOn{
