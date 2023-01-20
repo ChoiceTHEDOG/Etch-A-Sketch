@@ -1,8 +1,19 @@
-/* #mainContainer{ */
-    /* display: flex; */
-/* } */
+:root{
+    background-color: moccasin;
+}
 
+/* centering the buttons*/
+#buttonContainer{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    
+    margin-bottom: 20px;
+}
+
+/*centering the grid container*/
 #gridContainerDiv{
+    margin: auto;
 
     height: 600px;
     width: 600px;
@@ -10,7 +21,13 @@
     display: grid;
 
     background-color: whitesmoke;
-    border: 2px solid  lightblue;
+    border: 5px solid  black;
+}
+
+.button{
+    border-radius: 20px;
+    margin-right: 40px;
+    font-size: large;
 }
 
 .cell{
@@ -18,6 +35,7 @@
     background-color: white;
 }
 
-.hoverOn{
+/* the class is applied  when the mouse enters in a cell of the grid*/
+.hoverOn{   
     background-color: black;
 }
